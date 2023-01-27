@@ -1,0 +1,87 @@
+@import url(common/reset.css);
+
+/*join page*/
+
+.container{
+    background-color: aqua;
+}
+
+.container .join{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .join .join-con{
+    height: 200px;
+/*    border-radius: 30%;*/
+    box-sizing: border-box;
+    padding: 30px 20px;
+}
+
+.container .join .join-con .join-form{
+    background-color: aliceblue;
+/*    border: 1px solid yellow;*/
+    box-sizing: border-box;
+}
+
+.container .join .join-con .join-form ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.container .join .join-con .join-form ul li{
+/*    border: 1px solid red;*/
+    box-sizing: border-box;
+    padding: 5px 10px;
+}
+.container .join .join-con .join-form ul li:nth-child(1){
+    background-color: black;
+    font-size: 30px;
+    color: white;
+}
+.container .join .join-con .join-form ul li.s1{
+    display: flex;
+    justify-content: space-evenly;
+}
+.container .join .join-con .join-form ul li.s1 label{
+    flex: 0 0 85px;
+/*    background-color: yellow;*/
+    line-height: 29px;
+}
+.container .join .join-con .join-form ul li.s1 input{
+    flex: 4;
+    background-color: #53b1c3;
+    padding: 5px 10px;
+    box-sizing: border-box;
+}
+
+.container .join .join-con .join-form ul li.s2{
+    display: flex;
+    justify-content: space-between;
+}
+.container .join .join-con .join-form ul li.s2 input{
+    display: flex;
+    justify-content: space-between;
+}
+.container .join .join-con .join-form ul li.s2 .s2Sub{
+    width: auto;
+    flex: 1;
+    text-align: center;
+    border: 0;
+    background-color: #21538d;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin: 2px;
+}
+.container .join .join-con .join-form ul li.s2 .s2Sub:hover{
+    background-color: fuchsia;
+    color: chartreuse;
+}
+
+
+
+

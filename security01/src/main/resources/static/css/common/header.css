@@ -1,0 +1,48 @@
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid;
+}
+
+.header .nav{
+    display: flex;
+    justify-content: space-between;
+    flex:1000px;
+    border: 1px solid;
+    
+}
+
+.header .nav h1.logo{
+    width: 100px;
+    height: auto;
+    border: 1px solid;    
+}
+
+.header .nav .gnb{
+    width: 500px;
+    height: auto;
+    border: 1px solid;    
+}
+
+.header .nav .gnb >ul{
+    display: flex;
+    justify-content: space-between;
+}
+.header .nav .gnb >ul >li{
+    flex: 1;
+    text-align: center;
+    line-height: 60px;
+    background-color: aqua;
+    color: #555;
+    cursor: pointer;
+}
+.header .nav .gnb >ul >li:hover{
+    background-color: #c34c4c;
+    color: aliceblue;
+}
+.header .nav .gnb >ul >li a{
+    background-color: inherit;
+    color: inherit;
+}
+

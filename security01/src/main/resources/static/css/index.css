@@ -1,0 +1,31 @@
+@import url(common/reset.css);
+@import url(common/header.css);
+@import url(common/footer.css);
+
+/*Index page*/
+
+.index{
+    border: 1px solid;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.index .index-con{
+    width: 1200px;
+    border: 1px solid yellow;
+    box-sizing: border-box;
+}
+
+.index .index-con .gallery{
+    height: 600px;
+    width: 1200px;
+    border: 1px solid red;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/hd-wallpaper-g51acf18bc_1280.jpg) no-repeat 50%/cover;
+    
+}

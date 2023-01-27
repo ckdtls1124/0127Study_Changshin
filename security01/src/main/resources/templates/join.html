@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" th:href="@{/css/join.css}">
+</head>
+<body>
+<h1>Join</h1>
+<div class="container">
+    <div class="join">
+        <div class="join-con">
+            <form th:action="@{/join}" method="post" th:object="${memberDto}">
+                <div class="join-form">
+                    <ul>
+                        <li>Register</li>
+                        <li class="s1">
+                            <label th:for="email">EMAIL</label>
+                            <input type="text" th:field="*{email}">
+                        </li>
+                        <li class="error" th:if="${#fields.hasErrors('email')}" th:errors="*{email}">이메일 오류</li>
+
+                        <li class="s1">
+                            <label th:for="password">PASSWORD</label>
+                            <input type="password" th:field="*{password}">
+                        </li>
+                        <li class="error" th:if="${#fields.hasErrors('password')}" th:errors="*{password}">비밀번호
+                            오류
+                        </li>
+
+                        <li class="s2">
+                            <input class="s2Sub" type="submit" value="회원가입">
+                            <a class="s2Sub" th:href="@{/login}">로그인 페이지로 가기</a>
+                        </li>
+                    </ul>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>

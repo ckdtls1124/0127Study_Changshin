@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" th:href="@{/css/login.css}">
+</head>
+<body>
+<h1>login</h1> <br>
+<div class="container">
+    <div class="login">
+        <div class="login-con">
+            <form th:action="@{/login}" method="post" >
+                <div class="login-form">
+                    <ul>
+                        <li>Sign in</li>
+                        <li class="s1">
+                            <label for="email">EMAIL</label>
+                            <input type="text" name="email" id="email">
+                        </li>
+                        <li class="s1">
+                            <label for="password">PASSWORD</label>
+                            <input type="password" id="password" name="password">
+                        </li>
+                        <li class="s2">
+                            <input class="s2Sub" type="submit" value="로그인">
+                            <a class="s2Sub" th:href="@{/join}">회원가입 페이지로 가기</a>
+                        </li>
+                    </ul>
+                </div>
+            </form>
+            <div class="oauth">
+                <a th:href="@{/oauth2/authorization/google}"><img th:src="@{/img/btn_google_signin_light_focus_web@2x.png}" alt="googleLogInImg"></a>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
